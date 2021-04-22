@@ -2,6 +2,7 @@
   --dark: #292929;
   --dark-light: #3d3d3d;
   --green-light: #b4e9b2;
+  --green-lighter: #e0f1e0;
   --round: 10px;
   --round-light: 7px;
 }
@@ -22,7 +23,7 @@
 }
 
 html {
-  background-color: var(--green-light);
+  background-color: var(--green-lighter);
 }
 
 h3 {
