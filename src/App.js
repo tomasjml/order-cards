@@ -80,7 +80,7 @@ export default function App() {
         return (
           <div className="order text-green" key={order.id}>
             <div className="order__header">
-              <h3>Order ID: {order.id}</h3>
+              <h3>Order {order.id}</h3>
             </div>
             <div className="order__body">
               <ul className="list">

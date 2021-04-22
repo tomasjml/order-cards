@@ -1,8 +1,14 @@
 :root {
   --dark: #292929;
   --dark-light: #3d3d3d;
+  --green-light: #b4e9b2;
   --round: 10px;
   --round-light: 7px;
+}
+
+.text-green {
+  color: var(--green-light);
+  position: relative;
 }
 
 .App {
@@ -13,6 +19,37 @@
   flex-wrap: wrap;
   margin: 0 auto;
   align-content: center;
+}
+
+html {
+  background-color: var(--green-light);
+}
+
+h3 {
+  transition: all 0.2s ease-in-out;
+}
+
+h3:hover {
+  cursor: pointer;
+  background: var(--dark);
+  border-radius: var(--round-light);
+  padding: 0.6em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 0.6em auto;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+ul li:hover {
+  background: var(--dark);
+  border-radius: var(--round-light);
+  padding: 0.6em;
 }
 
 .list {
@@ -41,13 +78,9 @@
   margin: 0.2em;
   padding: 0.5em;
   border-radius: var(--round-light);
+  border-radius: var(--round-light);
 }
 
 .order:hover {
   transform: scale(1.05);
-}
-
-.text-green {
-  color: #b4e9b2;
-  position: relative;
 }
