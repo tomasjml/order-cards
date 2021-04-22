@@ -1,0 +1,32 @@
+.App {
+  font-family: "Comic Sans MS";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.list {
+  text-align: left;
+}
+
+.order {
+  padding: 1.4em;
+  margin: 0.6em;
+  margin-top: 15px;
+  background-color: #292929;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.order:hover {
+  transform: scale(1.05);
+}
+
+.text-green {
+  color: lightgreen;
+  position: relative;
+}
