@@ -1,3 +1,10 @@
+:root {
+  --dark: #292929;
+  --dark-light: #3d3d3d;
+  --round: 10px;
+  --round-light: 7px;
+}
+
 .App {
   font-family: "Comic Sans MS";
   text-align: center;
@@ -16,10 +23,24 @@
   padding: 1.4em;
   margin: 0.6em;
   margin-top: 15px;
-  background-color: #292929;
+  background-color: var(--dark);
   transition: all 0.5s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: var(--round);
+}
+
+.order__header {
+  background-color: var(--dark-light);
+  margin: 0.2em;
+  padding: 0.3em;
+  border-radius: var(--round-light);
+}
+
+.order__body {
+  background-color: var(--dark-light);
+  margin: 0.2em;
+  padding: 0.5em;
+  border-radius: var(--round-light);
 }
 
 .order:hover {
@@ -27,6 +48,6 @@
 }
 
 .text-green {
-  color: lightgreen;
+  color: #b4e9b2;
   position: relative;
 }

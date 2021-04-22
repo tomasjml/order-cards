@@ -79,12 +79,16 @@ export default function App() {
       {orders.map((order) => {
         return (
           <div className="order text-green" key={order.id}>
-            <p>Order ID: {order.id}</p>
-            <ul className="list">
-              <li>Taxt Percentage: {order.taxPerc}</li>
-              <li>Products bought: {getTotalItems(order)}</li>
-              <li>Price total: {getTotalBought(order)}</li>
-            </ul>
+            <div className="order__header">
+              <h3>Order ID: {order.id}</h3>
+            </div>
+            <div className="order__body">
+              <ul className="list">
+                <li>Taxt Percentage: {order.taxPerc}</li>
+                <li>Products bought: {getTotalItems(order)}</li>
+                <li>Price total: {getTotalBought(order)}</li>
+              </ul>
+            </div>
           </div>
         );
       })}
